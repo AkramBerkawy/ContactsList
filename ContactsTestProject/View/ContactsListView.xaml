@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ContactsTestProject.View.ContactsListView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:m="clr-namespace:ContactsTestProject.Model"
+      xmlns:v="clr-namespace:ContactsTestProject.View">
+    <UserControl.Resources>
+        <SolidColorBrush Color="Red" x:Key="HighlightedContactBackground" />
+        <SolidColorBrush Color="White" x:Key="HighlightedContactForground" />
+    </UserControl.Resources>
+    
+    <ListBox ItemsSource="{Binding Contacts}" SelectedItem="{Binding SelectedContact, Mode=TwoWay}">
+        <ListBox.Resources>
+            <Style TargetType="{x:Type ListBoxItem}">
+                <Style.Triggers>
+                    <!-- in our case it would be better if Age become field instead 
+                        of calculate it again and again
+                    -->
+                    <DataTrigger Binding="{Binding DOB, Converter={StaticResource AgeCheckConverter}, ConverterParameter=20}" Value="True" >
+                        <Setter Property="Background" Value="{StaticResource HighlightedContactBackground}"></Setter>
+                        <Setter Property="Foreground" Value="{StaticResource HighlightedContactForground}"></Setter>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </ListBox.Resources>
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <v:ContactView x:Name="ContactV" />
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Contacts>
+  <Contact Id="4bce77aa-9722-49e2-95d5-4a049a132287">
+    <FirstName>Akram</FirstName>
+    <LastName>Berkawy</LastName>
+    <DOB>1988-09-28T03:44:55.9298176+02:00</DOB>
+  </Contact>
+  <Contact Id="170d4acc-f6ef-41c0-9cd6-f95cc747f5d6">
+    <FirstName>John</FirstName>
+    <LastName>Master</LastName>
+    <DOB>1950-01-01T00:00:00</DOB>
+  </Contact>
+  <Contact Id="003be52e-1054-4778-a803-7b166f650159">
+    <FirstName>Edward</FirstName>
+    <LastName>Stewart</LastName>
+    <DOB>17/03/1963 12:00:00 ص</DOB>
+  </Contact>
+  <Contact Id="8492a443-58fe-4e8a-b867-33b96aaf8895">
+    <FirstName>Young</FirstName>
+    <LastName>Person</LastName>
+    <DOB>1995-09-01T00:00:00</DOB>
+  </Contact>
+</Contacts>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Contacts>
+  <Contact Id="123">
+    <FirstName>Akram</FirstName>
+    <LastName>Berkawy</LastName>
+    <DOB>20/1/1989</DOB>
+  </Contact>
+</Contacts>

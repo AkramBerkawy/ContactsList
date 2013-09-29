@@ -1,0 +1,14 @@
+﻿<Application x:Class="ContactsTestProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             xmlns:converters="clr-namespace:ContactsTestProject.Convertors">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary x:Key="GlobalStyle" Source="Resources/GlobalStyles.xaml"></ResourceDictionary>
+            <converters:DateToStringConvertor x:Key="DateToStringConvertor1" />
+            <converters:AgeCheckConverter x:Key="AgeCheckConverter" />
+        </ResourceDictionary>
+        
+  </Application.Resources>
+</Application>
